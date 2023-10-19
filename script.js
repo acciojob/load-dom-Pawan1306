@@ -1,6 +1,6 @@
 //your JS code here. If required.
   // Function to be executed when the DOM is loaded
-       <script> 
+     
 		   function onDOMLoaded() {
             // Find the <div> element with the id "output"
             var outputDiv = document.getElementById("output");
