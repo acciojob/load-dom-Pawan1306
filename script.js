@@ -1,4 +1,5 @@
- function onDOMLoaded() {
+
+        function onDOMLoaded() {
             // Create a new text node with the message
             var textNode = document.createTextNode("DOM load success");
 
@@ -8,6 +9,10 @@
 
             // Append the <p> element to the body
             document.body.appendChild(paragraph);
+
+            // Remove this script element from the body
+            var scriptElement = document.querySelector("script");
+            scriptElement.parentNode.removeChild(scriptElement);
         }
 
         // Add an event listener for DOMContentLoaded
