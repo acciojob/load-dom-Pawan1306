@@ -1,20 +1,15 @@
-//your JS code here. If required.
-  // Function to be executed when the DOM is loaded
-     
-		   function onDOMLoaded() {
-            // Find the <div> element with the id "output"
-            var outputDiv = document.getElementById("output");
+ function onDOMLoaded() {
+            // Create a new text node with the message
+            var textNode = document.createTextNode("DOM load success");
 
-            // Check if the element exists
-            if (outputDiv) {
-                // Create a text node with the message
-                var textNode = document.createTextNode("DOM load success");
+            // Create a <p> element to contain the text node
+            var paragraph = document.createElement("p");
+            paragraph.appendChild(textNode);
 
-                // Append the text node to the <div> element
-                outputDiv.appendChild(textNode);
-            }
+            // Append the <p> element to the body
+            document.body.appendChild(paragraph);
         }
 
-        // Add an event listener for the DOMContentLoaded event
+        // Add an event listener for DOMContentLoaded
         document.addEventListener("DOMContentLoaded", onDOMLoaded);
-    </script>
+
